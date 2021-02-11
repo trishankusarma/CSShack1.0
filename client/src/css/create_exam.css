@@ -1,0 +1,91 @@
+body {
+    /* background-image: url(img/Classroom\ 1.png); */
+    background-color: #1a1919;
+
+    /* background-image: url(img/Classroom\ 1.png); */
+
+    background-size: cover;
+}
+#heading {
+    color: #a5a3a3;
+    text-align: center;
+    justify-content: center;
+    margin-top: 10vh;
+    margin-bottom: auto;
+    font-size: 7vh;
+}
+.settime {
+    font-size: 1.7rem;
+    margin-top: 1%;
+    margin-bottom: 0.4%;
+}
+.upload_newexam {
+    font-size: 1.6rem;
+    margin-bottom: 0.4%;
+}
+.newexambutton {
+    text-align: center;
+    padding: 1.5% 1% 1.5% 1%;
+    width: 25%;
+    background-color: #252525;
+    color: rgb(255, 255, 255);
+    border: whitesmoke;
+    border: 10px;
+    border-radius: 1vw;
+    outline: none;
+    border: 2px solid #b9babb;
+    font-size: large;
+}
+.newexambutton_top {
+    text-align: center;
+    padding: 1.5% 1% 1.5% 1%;
+    width: 25%;
+    background-color: #252525;
+    color: rgb(255, 255, 255);
+    border: whitesmoke;
+    border: 10px;
+    border-radius: 1vw;
+    outline: none;
+    border: 2px solid #b9babb;
+    font-size: large;
+    margin-top: 5%;
+}
+.newexambutton_time {
+    text-align: center;
+    padding: 1.5% 1% 1.5% 1%;
+    width: 12.5%;
+    background-color: #252525;
+    color: rgb(255, 255, 255);
+    border: whitesmoke;
+    border: 10px;
+    border-radius: 1vw;
+    outline: none;
+    border: 2px solid #b9babb;
+    font-size: large;
+    margin-bottom: 2%;
+}
+.newexambutton:hover {
+    color: rgb(255, 255, 255);
+    background-color: rgb(0, 0, 0);
+}
+.newexamsubmit {
+    font-size: large;
+    text-align: center;
+    padding: 1.5% 3% 1.5% 3%;
+    margin: auto;
+    margin-top: 4%;
+    background-color: #7b7979;
+    color: rgb(255, 255, 255);
+    border: whitesmoke;
+    border: 10px;
+    border-radius: 1vw;
+    outline: none;
+    border: 2px solid #b9babb;
+}
+.newexamsubmit:hover {
+    color: rgb(255, 255, 255);
+    background-color: rgb(0, 0, 0);
+}
+#hello {
+    text-align: center;
+}
