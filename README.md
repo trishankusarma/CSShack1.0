@@ -16,9 +16,9 @@
 * Over 36 lakh learners are pursuing online degree courses and around 1 lakh students are pursuing DLP Programs from E-Learning platforms for exams that require writing (UPSC, Boards etc.)
 
 * Even with the pandemic almost over, still, over 2 lakh students shall appear online exams in the next six months, which gives us a huge kick-start
-#### Architecture Diagram
+#### Response from teachers about an online paper checking platform
 
-![005](public/img/005.png)
+![005](public/images/005.png)
 
 #### Technical Description
 
