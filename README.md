@@ -47,6 +47,7 @@
 
 ## Screenshots
 ![signin](images/signin.png)
+![landing](images/landing.png)
 
 ![003](public/004.PNG)
 ## FUTURE PROSPECT
