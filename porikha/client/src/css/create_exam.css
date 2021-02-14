@@ -1,0 +1,120 @@
+body {
+    /* background-image: url(img/Classroom\ 1.png); */
+    background-color: #1a1919;
+
+    /* background-image: url(img/Classroom\ 1.png); */
+
+    background-size: cover;
+}
+#createheading {
+    color: #a5a3a3;
+    text-align: center;
+    justify-content: center;
+    margin-top: 3vh;
+    margin-bottom: auto;
+    font-size: 7vh;
+    margin-right: 44%;
+
+}
+.settime {
+    font-size: 1.4rem;
+padding-top: 0%;
+margin-top:2%;
+    margin-bottom: 0.4%;
+    margin-right: 44%;
+
+}
+.upload_newexam {
+    padding-top: 0%;
+    font-size: 1.4rem;
+    margin-bottom: 0.6%;
+    margin-right: 44%;
+}
+.newexambutton {
+    text-align: center;
+    padding: 1.5% 1% 1.5% 1%;
+    width: 25%;
+    background-color: #252525;
+    color: rgb(255, 255, 255);
+    border: whitesmoke;
+    border: 10px;
+    border-radius: 1vw;
+    outline: none;
+    border: 2px solid #b9babb;
+    font-size: large;
+}
+.newexambutton_top {
+    text-align: center;
+    padding: 1.5% 1% 1.5% 1%;
+    width: 25%;
+    background-color: #252525;
+    color: rgb(255, 255, 255);
+    border: whitesmoke;
+    border: 10px;
+    border-radius: 1vw;
+    outline: none;
+    border: 2px solid #b9babb;
+    font-size: large;
+    margin-top: 5%;
+}
+.newexambutton_time {
+    text-align: center;
+    padding: 1.5% 1% 1.5% 1%;
+    width: 12.5%;
+    background-color: #252525;
+    color: rgb(255, 255, 255);
+    border: whitesmoke;
+    border: 10px;
+    border-radius: 1vw;
+    outline: none;
+    border: 2px solid #b9babb;
+    font-size: large;
+    margin-bottom: 2%;
+}
+.newexambutton:hover {
+    color: rgb(255, 255, 255);
+    background-color: rgb(0, 0, 0);
+}
+.newexamsubmit {
+    font-size: large;
+    text-align: center;
+    padding: 1.5% 3% 1.5% 3%;
+    margin: auto;
+    margin-top: 4%;
+    background-color: #7b7979;
+    color: rgb(255, 255, 255);
+    border: whitesmoke;
+    border: 10px;
+    border-radius: 1vw;
+    outline: none;
+    border: 2px solid #b9babb;
+}
+.newexamsubmit:hover {
+    color: rgb(255, 255, 255);
+    background-color: rgb(0, 0, 0);
+}
+.CElastsubmit{
+    font-size: large;
+    text-align: center;
+    padding: 1.5% 1.5% 1.5% 1.5%;
+    /* margin: auto; */
+    margin: 1% 0 2% 0;
+    background-color: #000000;
+    color: rgb(255, 255, 255);
+    /* border: whitesmoke; */
+    border: 10px;
+    border-radius: 1vw;
+    outline: none;
+    border: 2px solid #b9babb;
+    /* transition-delay: 2s; */
+}
+.CElastsubmit:hover{
+    transform: scale(1.08);
+}
+#hello {
+    text-align: center;
+}
+.personal_msg{
+    padding: 1%;
+   font-size: large;
+}

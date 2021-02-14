@@ -1,0 +1,87 @@
+.submitAnswer{
+    background-image: linear-gradient(to right,#191A1C,#888B94,#191A1C);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 100px;
+    padding-right: 500px;
+}
+.submitAnswer .qNoLabel{
+    position: relative;
+    left: 850px;
+    bottom: 150px;
+    font-size: 1.4rem;
+    font-family: cursive;
+    color: white;
+}
+.submitAnswer .qNoInput{
+    position: relative;
+    left: 850px;
+    bottom: 140px;
+   
+}
+.submitAnswer .answerSheet{
+    position: relative;
+    left: 710px;
+    bottom: 790px;
+    
+}
+.submitAnswer td{
+    color: white;
+    font-family: 'Bree Serif', serif;
+    border: 2px solid black;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+.submitAnswer .marksTable{
+    position: relative;
+    left: 770px;
+    bottom: 150px;
+    
+}
+.submitAnswer .logo{
+    position: relative;
+    bottom: 60px;
+    left:30px;
+}
+
+.submitAnswer .questionPaper{
+    position: relative;
+    bottom:215px;
+    padding-left: 30px;
+}
+.submitAnswer .final{
+    position: relative;
+    left: 550px;
+    top:360px;
+    font-family: 'Bree Serif', serif;
+    font-size: 1.3rem;
+    color: white;
+}
+.submitAnswer .qPaper{
+    position: relative;
+    bottom: 210px;
+    left: 200px;
+    font-family: cursive;
+    color: white;
+    font-size: 1.3rem;
+}
+.submitAnswer .aSheet{
+    position: relative;
+    bottom: 780px;
+    left:900px;
+    font-family: cursive;
+    color: white;
+    font-size: 1.3rem;
+}
+.submitAnswer .sbmit{
+    position: relative;
+    bottom:770px;
+    left:555px;
+}
+.submitAnswer .submitted{
+    padding-left: 6px;
+    color: white;
+    font-size: 1.3rem;
+    font-family: cursive;
+}

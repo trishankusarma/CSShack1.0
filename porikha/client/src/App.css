@@ -1,0 +1,233 @@
+*{
+  box-sizing: border-box;
+}
+body{
+ background-image: url(img/book\ 1.png);
+  /* background-color: #d43232;  */
+  background-position: center; /* Center the image */
+/* Do not repeat the image */
+background-size: cover;
+overflow-x: hidden;
+text-align: center;
+}
+h1{
+  color: azure;
+  text-align: center;
+  justify-content: center;
+  padding-top: 5%;
+  font-size: 10vh;
+  font-family: Century Gothic;
+  font-style: normal;
+  font-weight: normal;
+  letter-spacing: 1.7vh;
+}
+
+.probinfo{
+
+display: flex;
+flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  padding: 3% 30% 2% 30%;
+}
+
+.username{
+  margin-bottom: 3%;
+  padding-bottom: 2%;
+ border-radius: 2rem;
+  background-color: transparent;
+  color: whitesmoke;
+  padding-left: 2%;
+  padding-top: 2%;
+}
+::placeholder{
+  color: whitesmoke;
+  padding-left: 2%;
+  
+}
+#login_button{
+  text-align: center;
+  justify-content: center; 
+  border-radius: 20px;
+  background-color: #1A1919;
+  color: azure;
+  border: none;
+  padding: 0.5% 2% 0.5% 2%;
+  outline: none;
+  font-size: large;
+  cursor: pointer;
+  margin-top:10px;
+}
+#login_button:hover{
+  background-color: black;
+  color: white;
+}
+.button{
+  text-align: center;
+  justify-content: center; 
+}
+h2{
+  text-align: center;
+  justify-content: center; 
+  margin-top: 10%;
+  color: #CACACA;
+  font-size: 3vh;
+}
+input:focus{
+  outline: none;
+}
+.signupbtn {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px 16px;
+  margin-left:50%;
+  transform: translateX(-50%);
+  border: none;
+  border-radius: 20vh;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+  outline: none;
+  font-size: large;
+}
+
+.signupbtn:hover {
+  opacity:1;
+  /* transform: scale(1.1); */
+}
+
+ .signupbtn {
+ float: center;
+  width: 30%;
+}
+
+.sign{
+  color: whitesmoke;
+  padding-bottom: 1vh;
+  font-size: 5vh;
+  margin-right: 42.5%;
+}
+.sign2{
+  color: whitesmoke;
+}
+.plus{
+  position: relative;
+  transform: scale(0.69);
+  text-align: right;
+  margin-top: 10px;
+}
+.plus span{
+position:absolute; 
+border:1px solid white;
+margin-left:-5vw;
+margin-top:8vh;
+height:30px;
+width:200px;
+font-size:1.2em;
+padding-right:10px;
+color:white;
+opacity:0;
+}
+.plus:hover span{
+ opacity:1;
+}
+.plus button{
+background-color: #252525;
+border:1px solid white;
+cursor: pointer;
+}
+.topnav {
+background-color: rgb(34, 34, 34);
+padding: 0.8%;
+}
+.topnav a {
+float: left;
+display: block;
+color: #f2f2f2;
+text-align: center;
+padding: 14px 36px;
+text-decoration: none;
+font-size: 17px;
+
+}
+.topnav a.active {
+background-color:transparent;
+color: white;
+font-size: 4vh;
+}
+
+.exams{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 5%;
+    width:100vw;
+}
+.card {
+  transition: 0.3s;
+  width:20vw;
+  height: 20%;
+  border-radius: 5px;
+  margin-left:5%;
+  margin-bottom:3%;
+}
+
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(255, 255, 255, 0.2);
+}
+
+.contain {
+  padding: 20px 10%;
+  background-color: black;
+  color: whitesmoke;
+  border-radius: 0 0 15px 15px;
+  font-size: 1.3rem;
+}
+
+.subname{
+    padding:16px;
+    background-color: #252525;
+    color: whitesmoke;
+    text-align: center;
+    font-size:1.5rem;
+  }
+  .search{
+    width:300px;
+    height:30px;
+    padding: 0.3rem 1rem;
+    border-radius: 20px;
+    border:1px solid #ccc;
+   }
+   .search::placeholder{
+     color:black;
+     font-size:1rem;
+   }
+   .search:focus {
+    outline: none !important;
+   }
+   .search-icon{
+     margin-left:-2rem;
+     display: inline;
+     color:#ccc;
+     z-index: 100;
+   }
+@media screen and (max-width: 600px) {
+  .topnav a:not(:first-child) {display: none;}
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+  .topnav.responsive {position: relative;}
+  .topnav.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+}

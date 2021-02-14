@@ -1,0 +1,88 @@
+.Page1{
+    width:100vw;
+    min-height:90vh;
+    padding:5% 7%;
+    color:#fff;
+    text-align: center;
+    /* background-color: rgb(31, 30, 30); */
+}
+.Page1 .lev1{
+    display:flex;
+    justify-content:space-between;
+}
+
+.Page1 .box1{
+    border:5px solid #fff;
+    border-radius:10px;
+    width:170px;
+    height:57px;
+    background-color: rgb(46, 44, 44);
+   /* color: azure; */
+}
+.Page1 h2{
+    font-size: 1.6rem;
+    font-weight: 300;
+    letter-spacing: 2px;
+}
+.Page1 .box2
+{
+    border: 5px solid #fff;
+    text-align: center;
+    border-radius: 10px;
+    height: 80px;
+    width: 320px;
+    background-color: rgb(44, 42, 42);
+}
+.Page1 .history
+{   text-align: center; 
+    /* transform: translateX(43%); */
+    margin-top: 0%;
+}
+.Page1 .history h4{
+    font-size: 2.9rem;
+    font-weight: 300;
+    letter-spacing: 2px;
+}
+.Page1 table
+{
+    width: 100%;
+    border:1px solid white;
+}
+.Page1 th{
+    padding: 18px;
+    font-weight: 200;
+    font-size: 1.3rem;
+}
+.Page1 td{
+    padding: 10px;
+    text-align: center;
+    font-weight: 200;
+    font-size: 1.2rem;
+}
+@media screen and (max-width : 960px)
+{
+    .Page1 .box1{
+        border:5px solid #fff;
+        border-radius:7px;
+        width:100px;
+        height:47px;
+        background-color: rgb(46, 44, 44);
+    }
+    .Page1 h2{
+        font-size: 1.2rem;
+        font-weight: 200;
+        letter-spacing: 1px;
+    }
+    .Page1 .box2
+    {
+        border: 5px solid #fff;
+        text-align: center;
+        border-radius: 10px;
+        height: 60px;
+        width: 220px;
+        background-color: rgb(44, 42, 42);
+    }
+}
+.Page1 .examheads{
+    font-size: 1000px;
+}

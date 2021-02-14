@@ -1,0 +1,61 @@
+.SEhead{
+    color: rgb(63, 212, 37);
+    font-size: 4rem;
+    margin: 5rem 0 20vh 0;
+}
+.SEtop{
+    color:rgb(255, 255, 255);
+    font-size: 1.3rem;
+    margin: 10% 0 0 0;
+}
+.SEinput{
+    text-align: center;
+    padding: 5.5% 5% 5.5% 5%;
+    /* width: %; */
+    background-color: #252525;
+    color: rgb(255, 255, 255);
+    border: whitesmoke;
+    border: 10px;
+    border-radius: 1vw;
+    outline: none;
+    border: 2px solid #b9babb;
+    font-size: large;
+}
+::placeholder{
+    color: rgb(102, 101, 101);
+}
+.SEbutton{
+ 
+    padding: 1.5% 1% 1.5% 1%;
+   margin: 5% 10% 0 10%;
+    background-color: #252525;
+    color: rgb(255, 255, 255);
+    border: whitesmoke;
+    border: 10px;
+    border-radius: 1vw;
+    outline: none;
+    border: 2px solid #b9babb;
+    font-size: large;
+}
+.SEbutton:hover{
+    transform: scale(1.01);
+    background-color: #0f0f0f;
+}
+.SEfinal{
+    padding: 1.5% 1% 1.5% 1%;
+   margin: 10% 10% 0 12%;
+    text-align: center;
+    background-color: #252525;
+    color: rgb(255, 255, 255);
+    border: whitesmoke;
+    border: 10px;
+    border-radius: 1vw;
+    outline: none;
+    border: 2px solid #b9babb;
+    font-size: large;
+}
+.SEfinal:hover{
+
+    transform: scale(1.01);
+    background-color: #0f0f0f;
+}

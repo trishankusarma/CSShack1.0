@@ -1,0 +1,121 @@
+.Exam{
+    padding:3% 5%;
+    color:#fff;
+}
+h1{
+    transform: translateX(40%);
+    font-weight: 400;
+    letter-spacing: 2px;
+    font-size: 2.3rem;
+    text-transform: uppercase;
+}
+* {
+    box-sizing: border-box;
+  }
+  
+  .flex-container {
+    display: flex;
+    flex-direction: row;
+    font-size: 30px;
+    text-align: center;
+    height: 1000px;
+  }
+  
+  .flex-item-left {
+    padding: 10px;
+    flex: 80%;
+  }
+  
+  .flex-item-right {
+    padding: 10px;
+    flex: 40%;
+  }
+  .search1
+  {
+      height: 50px;
+      width: 200px;
+      border: 3px solid #fff;
+      border-radius: 20px;
+      background-color: rgb(39, 38, 38);
+      text-align: center;
+      text-transform: uppercase;
+      float:left;
+      margin-top: 70px;
+  }
+  .search2
+  {
+      height: 50px;
+      width: 200px;
+      border: 3px solid #fff;
+      border-radius: 20px;
+      background-color: rgb(39, 38, 38);
+      text-align: center;
+      text-transform: uppercase;
+      float:right;
+      margin-top: 70px;
+      margin-right: 270px;
+  }
+  .list
+  {
+      height: 600px;
+      width: 70%;
+      border: 5px solid #fff;
+      border-radius: 5%;
+      margin-top: 135px;
+  }
+  hr{
+      width: 340%;
+      margin-left: 5px;
+  }
+  table
+{
+    width: 100%;
+}
+th{
+    padding: 14px;
+    font-weight: 200;
+    font-size: 1.3rem;
+}
+td{
+    padding: 5px;
+    text-align: center;
+    font-weight: 200;
+    font-size: 1.2rem;
+}
+.status
+{
+    margin-top: 80px;
+}
+h3{
+    font-size: 20px;
+    font-weight: 250;
+    letter-spacing: 1px;
+}
+h4{
+    font-size: 20px;
+    font-weight: 300;
+    letter-spacing: 2px;
+}
+textarea{
+    height: 120px;
+    width: 340px;
+    border: 3px solid #fff;
+    border-radius: 4px;
+    background-color:rgb(39, 38, 38);
+
+    margin-top: 30px;
+    transform: translateX(20px);
+}
+.status td
+{
+    transform: translateX(-80px);
+}
+@media (max-width: 800px) {
+    .flex-container {
+      flex-direction: column;
+    }
+    .search2{
+        margin-top: -105px;
+        float: left;
+    }
+  }
