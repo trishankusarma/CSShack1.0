@@ -37,7 +37,14 @@
 ![usecase](images/usecase.png)
 
 ## Solution
-* #An Exam Portal
+###An Exam Portal
+* Would Replicate  an offline like environment
+* Evaluation of answer scripts would be similar to offline behavior curbing down the issues of online paper checking. 
+* UI would render offline exam experience to both teachers and students.
+* Teachers would be able to mark on the submitted answer scripts with the marks given on each page being automatically added, thus eliminating the process of totaling and corresponding errors.
+* Dark Mode would enable in making the evaluation process comfortable by reducing the stress on eyes that might result otherwise.
+* UX would provide a real-time exam experience
+
 ![001](public/img/001.PNG)
 
 ![003](public/004.PNG)
