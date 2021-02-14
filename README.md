@@ -47,11 +47,17 @@
 
 ## Screenshots
 * Sign Up page
+
 ![signin](images/signin.png)
+
+
 * Landing page
 ![landing](images/landing.png)
+
+
 * Create Room
 ![Createsubject](images/Createsubject.png)
+
 * student List
 ![Studentlist](images/Studentlist.png)
 
