@@ -58,9 +58,10 @@
 ### Team Members
 
 |Member Name|Scholar ID|
-|-----------|-----|------------|
+|-----------|-----|
 |Dhritiraj Bohar|1914011|
 |Trishanku Sharma|1912170|
 |Nihar Jyoti Basisth|1912099|
+|-----------|-----|
 
 
