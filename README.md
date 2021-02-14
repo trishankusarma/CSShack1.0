@@ -32,9 +32,9 @@
 
 
 
-### Various Screenshots
+### USE CASE
 
-![002](public/img/002.PNG)
+![usecase](images/usecase.png)
 
 
 ![001](public/img/001.PNG)
