@@ -21,7 +21,7 @@
 ![graph](images/graph.png)
 
 #### Technical Stack
-![MERN](images/MERN.png)
+![MERN](images/MERN.PNG)
 * Mongo DB
 * Express
 * React
