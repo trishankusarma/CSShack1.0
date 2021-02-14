@@ -46,7 +46,7 @@
 * UX would provide a real-time exam experience
 
 ## Screenshots
-![signin](imges/signin.png)
+![signin](images/signin.png)
 
 ![003](public/004.PNG)
 ## FUTURE PROSPECT
