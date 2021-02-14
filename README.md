@@ -48,7 +48,10 @@
 ![001](public/img/001.PNG)
 
 ![003](public/004.PNG)
-
+## FUTURE PROSPECT
+* ML Based marking system
+* ML Based anti cheat measures
+* Direct typing of question paper in portal
 
 ### Team Members
 List of team member names and email IDs with their contributions.
