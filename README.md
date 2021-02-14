@@ -18,7 +18,7 @@
 * Even with the pandemic almost over, still, over 2 lakh students shall appear online exams in the next six months, which gives us a huge kick-start
 #### Response from teachers about an online paper checking platform
 
-![005](public/images/graph.png)
+![graph](public/images/graph.png)
 
 #### Technical Description
 
