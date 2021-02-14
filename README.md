@@ -56,11 +56,11 @@
 * Direct typing of question paper in portal
 
 ### Team Members
-List of team member names and email IDs with their contributions.
-|Member Name|Email|Contribution|
+
+|Member Name|Scholar ID|
 |-----------|-----|------------|
-|Nihar Jyoti Basisth|nihar_ug@cse.nits.ac.in|Design|
-|Nihar Jyoti Basisth|nihar_ug@cse.nits.ac.in|Design|
-|Nihar Jyoti Basisth|nihar_ug@cse.nits.ac.in|Design|
-|Nihar Jyoti Basisth|nihar_ug@cse.nits.ac.in|Design|
+|Dhritiraj Bohar|1914011|
+|Trishanku Sharma|1912170|
+|Nihar Jyoti Basisth|1912099|
+
 
