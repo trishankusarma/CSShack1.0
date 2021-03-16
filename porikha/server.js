@@ -1,11 +1,5 @@
-const express = require('express');
-const app = express();
 const mongoose = require('mongoose');
-const classroomRouter = require('./routers/classroom');
-const teacherRouter = require('./routers/teacher');
-const studentRouter = require('./routers/student');
-const examRouter = require('./routers/exam');
-
+const app = require('./app');
 require('dotenv').config();
 
 const socketio = require('socket.io');
@@ -24,22 +18,16 @@ const sendMessage = require('./utils/formatMessage');
 
 const PORT = process.env.PORT || 8000;
 
-app.use(express.urlencoded({ extended: false }));
-app.use(express.json());
-
 const server = http.createServer(app);
 
 const io = socketio(server);
 
-mongoose.connect(
-  'mongodb+srv://shivam:DYlI02faUNAg7iki@email-verification.ea8dl.mongodb.net/myFirstDatabase?retryWrites=true&w=majority',
-  {
-    useNewUrlParser: true,
-    useUnifiedTopology: true,
-    useCreateIndex: true,
-    useFindAndModify: true
-  }
-);
+mongoose.connect(process.env.MONGODB_URL, {
+  useNewUrlParser: true,
+  useUnifiedTopology: true,
+  useCreateIndex: true,
+  useFindAndModify: true
+});
 const db = mongoose.connection;
 db.on('error', (error) => {
   console.error(error);
@@ -122,21 +110,6 @@ io.on('connection', (socket) => {
     }
   });
 });
-
-app.use('/classroom', classroomRouter);
-app.use('/teacher', teacherRouter);
-app.use('/exam', examRouter);
-app.use('/student', studentRouter);
-
-//Serve the static assets if in production
-if (process.env.NODE_ENV === 'production') {
-  //set static folder
-  app.use(express.static('client/build'));
-
-  app.get('*', (req, res) => {
-    res.sendFile(path.resolve(__dirname, ' client ', ' build ', 'index.html'));
-  });
-}
 
 // server.listen(PORT,()=>{
 server.listen(PORT, () => {
