@@ -7,6 +7,7 @@ const authentication = require('../utils/authentication');
 
 const {
   createTeacher,
+  activateTeacher,
   loginTeacher,
   logoutTeacher,
   getTeacher,
@@ -25,6 +26,7 @@ router.route('/').post(
   ],
   createTeacher
 );
+router.route('/activateTeacher/:token').post(activateTeacher);
 
 router
   .route('/log_in')
