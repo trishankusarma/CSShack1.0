@@ -1,14 +1,11 @@
+require('dotenv').config();
 const Teacher = require('../models/teacher');
 const { validationResult } = require('express-validator');
 const jwt = require('jsonwebtoken');
 const sendAuthEmail = require('./../utils/sendAuthEmail');
 const SGmail = require('@sendgrid/mail');
 
-const config = require('config');
-const jwtToken = config.get('jwtToken');
-const CLIENT_URL = config.get('CLIENT_URL');
-const API_KEY = config.get('SENDGRID_APIKEY');
-SGmail.setApiKey(API_KEY);
+SGmail.setApiKey(process.env.SENDGRID_APIKEY);
 
 exports.createTeacher = async (req, res) => {
   const errors = validationResult(req);
@@ -28,7 +25,7 @@ exports.createTeacher = async (req, res) => {
 
     const token = jwt.sign(
       { name, phoneNumber, institution, email, password },
-      jwtToken,
+      process.env.jwtToken,
       {
         expiresIn: '20m'
       }
@@ -44,11 +41,11 @@ exports.createTeacher = async (req, res) => {
       subject: 'Email Confirmation',
       text: `
   Click on the below link to verify your email:
-  ${CLIENT_URL}/teacher/activateTeacher/${token}
+  ${process.env.CLIENT_URL}/teacher/activateTeacher/${token}
   `,
       html: `
-  <h2>Click on the below link to verify your email: </a>
-  <a href="${CLIENT_URL}/teacher/activateTeachher/${token}">Click Here to Verify.</a>
+  <h2>Click on the below link to verify your email: </h2>
+  <a href="${process.env.CLIENT_URL}/teacher/activateTeachher/${token}">Click Here to Verify.</a>
   `
     };
 
@@ -63,7 +60,7 @@ exports.activateTeacher = async (req, res) => {
   const token = req.params.token;
 
   if (token) {
-    jwt.verify(token, jwtToken, async (err, decodedToken) => {
+    jwt.verify(token, process.env.jwtToken, async (err, decodedToken) => {
       if (err) {
         return res.status(400).json({ msg: 'Incorrect or Expired link!' });
       }

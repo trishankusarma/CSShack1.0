@@ -1,8 +1,6 @@
 const mongoose = require('mongoose');
 const app = require('./app');
 require('dotenv').config();
-const config = require('config');
-const mongoDBURL = config.get('mongoDBURL');
 
 const socketio = require('socket.io');
 const http = require('http');
