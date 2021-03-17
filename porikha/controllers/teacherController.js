@@ -1,5 +1,14 @@
 const Teacher = require('../models/teacher');
 const { validationResult } = require('express-validator');
+const jwt = require('jsonwebtoken');
+const sendAuthEmail = require('./../utils/sendAuthEmail');
+const SGmail = require('@sendgrid/mail');
+
+const config = require('config');
+const jwtToken = config.get('jwtToken');
+const CLIENT_URL = config.get('CLIENT_URL');
+const API_KEY = config.get('SENDGRID_APIKEY');
+SGmail.setApiKey(API_KEY);
 
 exports.createTeacher = async (req, res) => {
   const errors = validationResult(req);
@@ -7,7 +16,9 @@ exports.createTeacher = async (req, res) => {
     return res.status(400).json({ error: errors.array() });
   }
   try {
-    const teacherCheck = await Teacher.findOne({ email: req.body.email });
+    const { name, phoneNumber, institution, email, password } = req.body;
+
+    const teacherCheck = await Teacher.findOne({ email });
 
     if (teacherCheck) {
       return res
@@ -15,20 +26,81 @@ exports.createTeacher = async (req, res) => {
         .json({ msg: 'A teacher already exists with this email' });
     }
 
-    const teacher = new Teacher({
-      name: req.body.name,
-      phoneNumber: req.body.phoneNumber,
-      institution: req.body.institution,
-      email: req.body.email,
-      password: req.body.password
-    });
-    await teacher.save();
-    const token = await teacher.generateAuthToken();
-    res.status(201).json({ teacher: teacher, token });
+    const token = jwt.sign(
+      { name, phoneNumber, institution, email, password },
+      jwtToken,
+      {
+        expiresIn: '20m'
+      }
+    );
+
+    // Sending Mail
+    const msg = {
+      to: email,
+      from: {
+        name: 'no-reply@porikha.com',
+        email: 'shivaom1907@gmail.com'
+      },
+      subject: 'Email Confirmation',
+      text: `
+  Click on the below link to verify your email:
+  ${CLIENT_URL}/teacher/activateTeacher/${token}
+  `,
+      html: `
+  <h2>Click on the below link to verify your email: </a>
+  <a href="${CLIENT_URL}/teacher/activateTeachher/${token}">Click Here to Verify.</a>
+  `
+    };
+
+    sendAuthEmail(msg);
+    res.status(200).json({ msg: 'Verify your email!' });
   } catch (error) {
-    res.status(400).json(error.message);
+    res.json({ error: error.message });
   }
 };
+
+exports.activateTeacher = async (req, res) => {
+  const token = req.params.token;
+
+  if (token) {
+    jwt.verify(token, jwtToken, async (err, decodedToken) => {
+      if (err) {
+        return res.status(400).json({ msg: 'Incorrect or Expired link!' });
+      }
+
+      const { name, phoneNumber, institution, email, password } = decodedToken;
+
+      try {
+        let teacher = await Teacher.findOne({ email });
+        if (teacher)
+          return res.status(400).json({ msg: 'User already exists!' });
+        let newTeacher = new Teacher({
+          name,
+          phoneNumber,
+          institution,
+          email,
+          password
+        });
+
+        await newTeacher.save();
+        const teacherToken = await newTeacher.generateAuthToken();
+        res.status(201).json({
+          msg: 'Account Activated!',
+          teacher: newTeacher,
+          teacherToken
+        });
+      } catch (error) {
+        console.error(error.message);
+        res
+          .status(500)
+          .send('Internal Server Error, during email verification!');
+      }
+    });
+  } else {
+    return res.json({ error: 'Email Not Verified!' });
+  }
+};
+
 exports.loginTeacher = async (req, res) => {
   const errors = validationResult(req);
   if (!errors.isEmpty()) {
